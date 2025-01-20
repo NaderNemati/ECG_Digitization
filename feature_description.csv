@@ -1,0 +1,197 @@
+﻿id,unig_feature,12sl_feature,ecgdeli_feature,description,Loinc_concept_ids,unit,comment,consistent_units_unig,consistent_units_12sl
+P_Amp_X,$ P+_Amp_X if P_Morph_X>0 else P-_Amp_X,P_PeakAmpl_X,PWa_X,P wave amplitude in lead X,"3024893, 3025405, 3026247, 3012776, 3027068, 3012976, 3010691, 3014384, 3025329, 3011867, 3025534, 3006830",mV,,0.001,0.001
+P_DurFull_X,ILM_P_Dur_X,$ P_Dur_X+Pp_Dur_X,PWd_X,Sum of P and P' wave duration in lead X,,ms,,1,1
+P_Dur_X,$ P_DurFull_X - P-_Dur_X if P_Morph_X>0 else P_DurFull_X - P+_Dur_X,P_Duration_X,,P wave duration in lead X,"3009784, 3023622, 3019852, 3020390, 3005529, 3004434, 3010688, 3014065, 3020513, 3011864, 3012364, 3026092",ms,,1,1
+Pp_Amp_X,$ P-_Amp_X if P_Morph_X>0 else P+_Amp_X,PP_PeakAmpl_X,,P' wave amplitude in lead X,"3002979, 3001868, 3000537, 3033317, 3005371, 3000774, 3002936, 3002379, 3001287, 3020741, 3000038, 3005100",mV,,0.001,0.001
+Q_Dur_X,ILM_Q_Dur_X,Q_Duration_X,,Q wave duration in lead X,"3037087,3020600,3009543,3014760,3009132,3016129,3016368,3016651,3004180,3014095,3015243,3008160",ms,,1,1
+Q_Amp_X,ILM_Q_Amp_X,Q_PeakAmpl_X,QPa_X,Q wave amplitude in lead X,"3036176,3009332,3001472,3020018,3035703,3035937,3036519,3023074,3013791,3019126,3035348,3034822,3019502",mV,,0.001,-0.001
+QT_Int_X,ILM_QT_Int_X,,QTi_X,Q-T interval lead X,"3019502,3004627,3004307,3003198,3002096,3019915,3020079,3005602,3004425,3009427,3019568,3023137",ms,,1,1
+QRS_Dur_X,ILM_QRS_Dur_X,$ Q_Dur_X+R_Dur_X+S_Dur_X+Rp_Dur_X+Sp_Dur_X,QRSd_X,QRS duration in lead X,"3017331,3017568,3004698,3007793,3006697,3028023,3024511,3024795,3004891,3007353,3016790,3008696",ms,QRSint_X calculated manually,1,1
+R_Amp_X,ILM_R_Amp_X,R_PeakAmpl_X,RPa_X,R wave amplitude in lead X,"3003739,3002640,3022797,3019234,3019213,3004514,3003417,3002312,3001146,3022916,3000485,3023180",mV,,0.001,0.001
+Rp_Amp_X,ILM_R'_Amp_X,RP_PeakAmpl_X,,R' wave amplitude in lead X,"3022197,3023215,3023438,3000256,3003822,3002662,3001065,3019534,3019525,3010547,3016565,3011080",mV,,0.001,0.001
+R_Dur_X,ILM_R_Dur_X,R_Duration_X,,R wave duration in lead X,"3027200,3010930,3028561,3009874,3010162,3015898,3019045,3022311,3005273,3036635,3026672,3037163",ms,,1,1
+Rp_Dur_X,ILM_R'_Dur_X,RP_Duration_X,,R' wave duration in lead X,"3001993,3020976,3036939,3037170,3037997,3002744,3001568,3019090,3037593,3004586,3003156,3003491",ms,,1,1
+S_Amp_X,ILM_S_Amp_X,S_PeakAmpl_X,SPa_X,S wave amplitude in lead X,"3012698,3015703,3008449,3034195,3034721,3022727,3013660,3012247,3017441,3038132,3022112,3033831",mV,,0.001,-0.001
+S_Dur_X,ILM_S_Dur_X,S_Duration_X,,S wave duration in lead X,"3004962,3012847,3018053,3008531,3014606,3015129,3008822,3007764,3006427,3018289,3018823,3018593",ms,,1,1
+Sp_Dur_X,ILM_S'_Dur_X,SP_Duration_X,,S' wave duration in lead X,"3024162,3024999,3011532,3011193,3012036,3013753,3023167,3025675,3012198,3005743,3028525,3027381",ms,,1,1
+Sp_Amp_X,ILM_S'_Amp_X,SP_PeakAmpl_X,,S' wave amplitude in lead X,"3016333,3008226,3007187,3006084,3026487,3027854,3028391,3024096,3024633,3023278,3016041,3025594",mV,,0.001,-0.001
+ST_Slope_X,ILM_ST_Slope_X,,,ST slope in lead X,"3001895,3000583,3033357,3005620,3000008,3002802,3001697,3000667,3037901,3005198,3003078,3000206",degrees,,1,1
+ST_Amp_X,ILM_ST_Amp_X,STJ_X,,ST amplitude at the J-point in lead X,"21490798,21490799,21490800,21490792,21490793,21490794,21490795,21490796,21490797,21490801,21490803,21490802",mV,,0.001,0.001
+ST_Amp80ms_X,ILM_ST80_Amp_X,,,ST amplitude at the J-point+80 ms in lead X,"3014402,3008999,3015536,3015781,3016916,3008326,3007226,3006124,3026525,3015166,3009175,3008924",mV,,0.001,0.001
+T_Amp_X,$ T+_Amp_X if T_Morph_X>0 else T-_Amp_X,T_PeakAmpl_X,TWa_X,T wave amplitude in lead X,"3024463,3025057,3011589,3026125,3012338,3024851,3025134,3025973,3012204,3005802,3023934,3027447",mV,,0.001,0.001
+P_AxisFront_Global,GM_PFrontalAxis,PAxis,,P wave axis frontal plane,3028068,degrees,,1,1
+P_Dur_Global,OnOff_P_Duration,$ P_Off_Global-P_On_Global,PWd_max,P wave duration,3028024,ms,,1,1
+P_Off_Global,OnOff_P_Termination,P_Offset,,P wave offset,3022707,ms,,1,2
+P_On_Global,OnOff_P_Onset,P_Onset,,P wave onset,3006569,ms,,1,2
+PR_Int_Global,Int_PR_Interval,PR_Interval,PRi_max,P-R Interval,3007794,ms,,1,1
+QT_Int_Global,Int_QT_Interval,QT_Interval,QTi_max,Q-T interval,3025809,ms,,1,1
+QRS_Dur_Global,OnOff_QRS_Duration,QRS_Duration,QRSd_max,QRS duration,3022022,ms,,1,1
+QRS_AxisFront_Global,GM_QrsFrontalAxis,,,QRS axis frontal plane,3028303,degrees,,1,1
+QRS_On_Global,OnOff_QRS_Onset,QRS_Onset,,QRS onset,3025562,ms,,1,2
+QRS_Off_Global,OnOff_QRS_Termination,QRS_Offset,,QRS offset,3026651,ms,,1,2
+RR_Mean_Global,GM_Average_RR_Sinus,AvgRRInterval,RRi_max,R-R interval (Mean value during study),3006307,ms,,1,1
+RR_StdDev_Global,GM_StdDev_Normal_RR_Intervals,,,R-R interval.standard deviation (Heart rate variability),46235182,ms,,1,1
+T_Off_Global,OnOff_T_Termination,T_Offset,,T wave offset,3027776,ms,,1,2
+T_On_Global,OnOff_T_Onset,T_Onset,,T wave onset,,ms,T_Onset not defined unambiguously,1,2
+T_AxisFront_Global,GM_TFrontalAxis,TAxis,,T wave axis frontal plane,3009913,degrees,,1,1
+QRS_AxisIndet_Global,Flag_Indeterminate_QRS_axis,,,Indeterminate QRS axis,,integer,,1,1
+P_Found_Global,Flag_P_waves_found,$ P_Amp_X!=0 or P_Dur_X!=0,,P waves found,,integer,,1,1
+HR__Global,GM_Display_Heart_Rate,$ HR_Ventr_Global,,Heart rate beat-to-beat,21490872,bpm,,1,1
+HR_Var_Global,GM_Heart_Rate_Variability,,,Heart rate variability,,bpm,,1,1
+QRS_PV48SpatVel_Global,GM_QRS_Pseudo_Vector_4/8_Spatial_Velocity,,,amplitude of the spatial velocity vector at 4/8 QRS,,mV/ms,,0.001,0.001
+QRS_PV58SpatVel_Global,GM_QRS_Pseudo_Vector_5/8_Spatial_Velocity,,,amplitude of the spatial velocity vector at 5/8 QRS,,mV/ms,,0.001,0.001
+QRS_PV68SpatVel_Global,GM_QRS_Pseudo_Vector_6/8_Spatial_Velocity,,,amplitude of the spatial velocity vector at 6/8 QRS,,mV/ms,,0.001,0.001
+QRS_PV78SpatVel_Global,GM_QRS_Pseudo_Vector_7/8_Spatial_Velocity,,,amplitude of the spatial velocity vector at 7/8 QRS,,mV/ms,,0.001,0.001
+ST_AxisFront_Global,GM_STFrontalAxis,,,ST wave axis frontal plane,,degrees,,1,1
+HR_Sinus_Global,GM_Sinus_Rate,,,Sinus rate,,bpm,,1,1
+HR_Ventr_Global,GM_Ventricular_Rate,VentRate,,Ventricular rate,,bpm,,1,1
+HR_Atrial_Global,,AtrialRate,,Atrial heart rate,,bpm,,1,1
+Delta_Conf_X,ILM_DeltaConf_X,,,Delta wave confidence in lead X,,percent,,1,1
+QRS_NotchAmp_X,ILM_EndQRSNSA_X,,,End QRS notch/slur amplitude in lead X,,mV,,0.001,0.001
+QRS_NotchOn_X,ILM_EndQRSNSO_X,,,End QRS notch/slur onset in lead X,,ms,,1,1
+QRS_NotchPeak_X,ILM_EndQRSNSP_X,,,End QRS notch/slur peak in lead X,,ms,,1,1
+P+_Dur_X,ILM_P+_Dur_X,$ P_Dur_X if P_Amp_X>0 else Pp_Dur_X,,P+ wave duration in lead X,,ms,,1,1
+P-_Dur_X,$ P_DurFull_X-P+_Dur_X,$ Pp_Dur_X if P_Amp_X>0 else P_Dur_X,,P- wave duration in lead X,,ms,,1,1
+P+_Amp_X,ILM_P+_Amp_X,$ P_Amp_X if P_Amp_X>0 else Pp_Amp_X,,P+ wave amplitude in lead X,,mV,,0.001,0.001
+P-_Amp_X,ILM_P-_Amp_X,$ P_Amp_X if P_Amp_X<0 else Pp_Amp_X,,P- wave amplitude in lead X,,mV,,0.001,0.001
+PR_Amp_X,ILM_PR_AMP_X,,,PR amplitude in lead X,,mV,,0.001,0.001
+P_Area_X,ILM_P_Area_X,P_Area_X,,P wave area in lead X,,mV*ms,,0.002,0.001
+P_Morph_X,ILM_P_Morph_X,$ (1 if P_Amp_X>0 else -1) if Pp_Amp_X==0 else (2 if P_Amp_X>0 else -2),PWm_X,"P wave morphology in lead X (-3: negative m-shaped, -2: negative biphasic, -1: negative monophasic, 1: positive monophasic, 2: positive biphasic, 3: positive m-shaped for KIT, Glasgow & GE only between -2 and 2)",,integer,,1,1
+P_On_X,ILM_P_Ons_X,,,P wave onset in lead X,,ms,,1,1
+QRS_Area_X,ILM_QRS_Area_X,QRS_Area_X,,QRS area in lead X,,mV*ms,,0.002,0.001
+QRS_IntDefl_X,ILM_QRS_IntD_X,,,"QRS intrinsicoid deflection in lead X (QRS
+onset to the peak of the R wave)",,ms,,1,1
+QRS_AmpPP_X,ILM_P2P_Amp_X,QRS_Deflection_X,,QRS peak-to-peak amplitude in lead X (R_Amp_X-S_Amp_X),,mV,,0.001,0.001
+QRS_On_X,ILM_QRS_Ons_X,,,QRS onset in lead X,,ms,,1,1
+Rpp_Amp_X,ILM_R''_Amp_X,,,R'' amplitude in lead X,,mV,,0.001,0.001
+Rpp_Dur_X,ILM_R''_Dur_X,,,R'' duration in lead X,,ms,,1,1
+R_Notch_X,ILM_R_Notch_X,,,R wave notches in lead X,,integer,,1,1
+Spp_Amp_X,ILM_S''_Amp_X,,,S'' amplitude in lead X,,mV,,0.001,0.001
+Spp_Dur_X,ILM_S''_Dur_X,,,S'' duration in lead X,,ms,,1,1
+ST_Amp28_X,ILM_STT28_Amp_X,,,2/8 ST-T amplitude in lead X,,mV,,0.001,0.001
+ST_Amp38_X,ILM_STT38_Amp_X,,,3/8 ST-T amplitude in lead X,,mV,,0.001,0.001
+ST_AmpAdj_X,ILM_ST_AMPAdj_X,,,ST adjusted amplitude in lead X,,mV,,0.001,0.001
+ST_Dur_X,ILM_ST_Dur_X,,,ST duration in lead X,,ms,,1,1
+T+_Dur_X,ILM_T+_Dur_X,$ T_Dur_X if T_Amp_X>0 else Tp_Dur_X,,T+ duration in lead X,,ms,,1,1
+T-_Dur_X,$ T_Dur_X-T+_Dur_X,$ Tp_Dur_X if T_Amp_X>0 else T_Dur_X,,T- duration in lead X,,ms,,1,1
+T+_Amp_X,ILM_T+_Amp_X,$ T_Amp_X if T_Amp_X>0 else Tp_Amp_X,,T+ amplitude in lead X,,mV,,0.001,0.001
+T-_Amp_X,ILM_T-_Amp_X,$ T_Amp_X if T_Amp_X<0 else Tp_Amp_X,,T- amplitude in lead X,,mV,,0.001,0.001
+T_Area_X,ILM_T_Area_X,T_Area_X,,T area in lead X,,mV*ms,,0.002,0.001
+T_Morph_X,ILM_T_Morph_X,$ (1 if T_Amp_X>0 else -1) if Tp_Amp_X==0 else (2 if T_Amp_X>0 else -2),,T morphology in lead X,,integer,,1,1
+T_On_X,ILM_T_Ons_X,,,T onset in lead X,,ms,,1,1
+LVH_Strain_Global,Int_LV_Strain,,,LVH strain pattern,,integer,,1,1
+P_Term_V1,Int_P_Terminal_(V1),$ P-_Dur_V1*P-_Amp_V1 if P_Morph_V1==2 else 0,,P terminal force (product of P- amplitude and P- duration in V1),,mV*ms,,0.001,0.001
+QT_IntCorr_Global,Int_QT_Corrected_(used),QTCCalculation,,Q-T interval corrected,3026258,ms,,1,1
+QT_Disp_Global,Int_QT_Dispersion,,,QT dispersion,,ms,,1,1
+ST_Dur_Global,Int_ST_Duration,,,ST duration,,ms,,1,1
+T_Dur_Global,OnOff_T_Duration,,TWd_max,T duration,,ms,,1,1
+QT_IntBazett_Global,QTc_Bazett,QTc_Bazett,,Q-T interval corrected based on Bazett formula,46235174,ms,,1,1
+QT_IntFramingham_Global,QTc_Framingham,QTcFramingham,QTci_max,Q-T interval corrected based on Framingham formula,,ms,,1,1
+QT_IntFridericia_Global,QTc_Fridericia,QTcFredericia,,Q-T interval corrected based on Fridericia formula,46235173,ms,,1,1
+QT_IntHodge_Global,QTc_Hodge,,,Q-T interval corrected based on Hodge formula,,ms,,1,1
+VM_AngFront_MaxQRS,VM_Angles_(F)_QRS(12L),,,angle between the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the frontal plane and the positive direction of the X axis,,degrees,,1,1
+VM_AngFront_MaxT,VM_Angles_(F)_T(12L),,,angle between the projection of the spatial vector at the specified point (Max T 12 lead) onto the frontal plane and the positive direction of the X axis,,degrees,,1,1
+VM_LenFront_MaxQRS,VM_Lengths(F)_QRS(12L),,,length of the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the frontal plane,,mV,,0.001,1
+VM_LenFront_MaxT,VM_Lengths(F)_T(12L),,,length of the projection of the spatial vector at the specified point (Max T 12 lead) onto the frontal plane,,mV,,0.001,1
+VM_AngRSag_MaxQRS,VM_Angles_(RS)_QRS(12L),,,angle between the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the right sagittal plane and the positive direction of the Z axis,,degrees,,1,1
+VM_AngRSag_MaxT,VM_Angles_(RS)_T(12L),,,angle between the projection of the spatial vector at the specified point (Max T 12 lead) onto the right sagittal plane and the positive direction of the Z axis,,degrees,,1,1
+VM_LenRSag_MaxQRS,VM_Lengths(RS)_QRS(12L),,,length of the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the right sagittal plane,,mV,,0.001,1
+VM_LenRSag_MaxT,VM_Lengths(RS)_T(12L),,,length of the projection of the spatial vector at the specified point (Max T 12 lead) onto the right sagittal plane,,mV,,0.001,1
+VM_AngTrans_MaxQRS,VM_Angles_(T)_QRS(12L),,,angle between the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the transverse plane and the positive direction of the X axis,,degrees,,1,1
+VM_AngTrans_MaxT,VM_Angles_(T)_T(12L),,,angle between the projection of the spatial vector at the specified point (Max T 12 lead) onto the transverse plane and the positive direction of the X axis,,degrees,,1,1
+VM_LenTrans_MaxQRS,VM_Lengths(T)_QRS(12L),,,length of the projection of the spatial vector at the specified point (Max QRS 12 lead) onto the transversal plane,,mV,,0.001,1
+VM_LenTrans_MaxT,VM_Lengths(T)_T(12L),,,length of the projection of the spatial vector at the specified point (Max T 12 lead) onto the transversal plane,,mV,,0.001,1
+VM_Mag_MaxQRS,VM_Magnitude_QRS(12L),,,magnitude of the spatial vector at the point specified (Max QRS 12 lead),,mV,,0.001,1
+VM_Mag_MaxT,VM_Magnitude_T(12L),,,magnitude of the spatial vector at the point specified (Max T 12 lead),,mV,,0.001,1
+VM_Pos_MaxQRS,VM_Position_QRS(12L),,,"position of specified point (Max QRS 12 lead), located relative to start of modal beat array",,ms,,1,1
+VM_Pos_MaxT,VM_Position_T(12L),,,"position of specified point (Max T 12 lead), located relative to start of modal beat array",,ms,,1,1
+VM_Vel_18QRS,VM_Spatial_Velocity_1/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_28QRS,VM_Spatial_Velocity_2/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_38QRS,VM_Spatial_Velocity_3/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_48QRS,VM_Spatial_Velocity_4/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_58QRS,VM_Spatial_Velocity_5/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_68QRS,VM_Spatial_Velocity_6/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_78QRS,VM_Spatial_Velocity_7/8_QRS(12L),,,amplitude of the spatial velocity vector (0/8 is the onset and 8/8 the termination of the QRS complex),,mV/ms,,0.001,1
+VM_Vel_+10msQRS,VM_Spatial_Velocity_+10ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_+20msQRS,VM_Spatial_Velocity_+20ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_+30msQRS,VM_Spatial_Velocity_+30ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_-10msQRS,VM_Spatial_Velocity_-10ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_-20msQRS,VM_Spatial_Velocity_-20ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_-30msQRS,VM_Spatial_Velocity_-30ms_QRS(12L),,,amplitude of the spatial velocity vector at the specified instant of time,,mV/ms,,0.001,1
+VM_Vel_MaxQRS,VM_Spatial_Velocity_Max_QRS(12L),,,Max QRS spatial velocity(12 lead),,mV/ms,,0.001,1
+VM_Vel_MaxT,VM_Spatial_Velocity_Max_T(12L),,,Max T spatial velocity(12 lead),,mV/ms,,0.001,1
+VM_Ang_QRS-T,VM_Spatial_Angle_QRS-T(12L),,,QRS-T spatial angle,,degrees,,1,1
+PR_Int_X,,,PRi_X,P-R Interval in lead X,"3024603, 3010581, 3011118, 3018956, 3022239, 3023501, 3023790, 3011157, 3012006, 3027589, 3024066, 3028427",ms,,1,1
+Pp_Dur_X,$ P_DurFull_X - P+_Dur_X if P_Morph_X > 0 else P_DurFull_X - P-_Dur_X ,PP_Duration_X,,P' duration in lead X,,ms,,1,1
+R_AxisFrontal_Global,,RAxis,,R wave axis frontal plane,,degrees,,1,1
+Tp_Amp_X,$ T-_Amp_X if T_Morph_X>0 else T+_Amp_X,TP_PeakAmpl_X,,T' wave amplitude in lead X,"3016315, 3008291, 3007252, 3006151, 3026773, 3027921, 3028763, 3004048, 3006851, 3008969, 3016094, 3015565",mV,,1,1
+P_OnsAmp_X,,P_OnsetAmpl_X,,P wave onset amplitude in lead X,,mV,,1,1
+P_PeakTime_X,,P_PeakTime_X,,P wave peak time in lead X,,ms,,1,1
+Pp_Area_X,,PP_Area_X,,P' area in lead X,,mV*ms,,1,0.001
+Pp_PeakTime_X,,PP_PeakTime_X,,P' peak time in lead X,,ms,,1,1
+Q_Area_X,,Q_Area_X,,Q area in lead X,,mV*ms,,1,0.001
+Q_PeakTime_X,,Q_PeakTime_X,,Q peak time in lead X,,ms,,1,1
+R_Area_X,,R_Area_X,,R area in lead X,,mV*ms,,1,0.001
+R_PeakTime_X,,R_PeakTime_X,,R peak time in lead X,,ms,,1,1
+S_Area_X,,S_Area_X,,S area in lead X,,mV*ms,,1,0.001
+S_PeakTime_X,,S_PeakTime_X,,S peak time in lead X,,ms,,1,1
+Rp_Area_X,,RP_Area_X,,R' area in lead X,,mV*ms,,1,0.001
+Rp_PeakTime_X,,RP_PeakTime_X,,R' peak time in lead X,,ms,,1,1
+Sp_Area_X,,SP_Area_X,,S' area in lead X,,mV*ms,,1,0.001
+Sp_PeakTime_X,,SP_PeakTime_X,,S' peak time in lead X,,ms,,1,1
+ST_Amp116_X,,STM_X,,ST level at the QRS offset plus 1/16 of the average RR interval,,mV,,1,1
+ST_Amp18_X,,STE_X,,ST level at the QRS offset plus 1/8 of the average RR interval,,mV,,1,1
+ST_AmpMax_X,,MaxST_X,,"maximum of STJ_X, STM_X and STE_X",,mV,,1,1
+ST_AmpMin_X,,MinST_X,,"minimum of STJ_X, STM_X and STE_X",,mV,,1,1
+T_AmpSpecial_X,,T_Special_X,,minimum of either T amplitude or (T amplitude -STE_X),,mV,,1,1
+QRS_Balance_X,,QRS_Balance_X,,maximum R amplitude - maximum S amplitude,,mV,,1,1
+Max_R_Amp_X,,Max_R_Ampl_X,,maximum of the R or R’,,mV,,1,1
+Max_S_Amp_X,,Max_S_Ampl_X,,"maximum of the Q, S, or S’",,mV,,1,1
+T_DurFull_X,ILM_T_Dur_X,$ T_Dur_X + Tp_Dur_X,TWd_X,Sum of T and T' duration in lead X,,ms,,1,1
+T_Dur_X,$ T_DurFull_X - T-_Dur_X if T_Morph_X>0 else T_DurFull_X - T+_Dur_X,T_Duration_X,,T duration in lead X,,ms,,1,1
+T_PeakTime_X,,T_PeakTime_X,,T peak time in lead X,,ms,,1,1
+Tp_Dur_X,$ T_DurFull_X - T+_Dur_X if T_Morph_X > 0 else T_DurFull_X - T-_Dur_X ,TP_Duration_X,,T' duration in lead X,,ms,,1,1
+Tp_Area_X,,TP_Area_X,,T' area in lead X,,mV*ms,,1,0.001
+Tp_PeakTime_X,,TP_PeakTime_X,,T' peak time in lead X,,ms,,1,1
+T_Off_X,,T_End_X,,T offset in lead X,,ms,,1,1
+P_AreaFull_X,,PFull_Area_X,,Sum of  P and P' areas,,mV*ms,,1,0.001
+T_AreaFull_X,,TFull_Area_X,,Sum of T and T' areas,,mV*ms,,1,0.001
+Q_On_Global,,QOnset,,Q onset,,ms,,1,2
+Q_Off_Global,,QOffset,,Q offset,,ms,,1,2
+ST_Elev_X,,,STc_X,ST elevation/depression from multiple Gaussian fits in lead X,,mV,,1,1
+PQ_Int_X,,,PQi_X,PQ interval in lead X,,ms,,1,1
+QT_IntCorr_X,,,QTci_X,Q-T interval corrected based on Framingham formula in lead X,,ms,,1,1
+PQ_Int_Global,,,PQi_max,max PQ interval across all leads,,ms,,1,1
+HA__Global,,,elHA,"electrical heart axis (1: left axis deviation, 2: horizontal axis, 3: normal axis, 4: vertical axis, 5: right axis, 6: extreme right axis deviation)",,integer,,1,1
+QRS_Count_Global,,QRSCount,,Number of QRS complexes,46235176,integer,,1,1
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
